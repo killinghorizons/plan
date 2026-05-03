@@ -1,0 +1,29 @@
+---
+import "../styles/main.css";
+const { title, frontmatter } = Astro.props;
+import { Font } from "astro:assets";
+import Header from "../components/Header.astro";
+
+const metadata = frontmatter || {};
+const pageTitle = metadata.title ? frontmatter.title : title
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Plans - {pageTitle}</title>
+        <Font cssVariable="--font-plex-sans" />
+        <Font cssVariable="--font-plex-mono" />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <div class="container">
+                <slot />
+            <div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<header class="header">
+    <nav class="nav container">
+        <a href="/" class="nav-link">/root</a>
+        <div class="nav-list">
+            <a href="/python" class="nav-link">/python</a>
+            <a href="/cpp" class="nav-link">/c++</a>
+            <a href="/db" class="nav-link">/db</a>
+            <a href="/network" class="nav-link">/network</a>
+            <a href="/windows" class="nav-link">/windows</a>
+            <a href="/linux" class="nav-link">/linux</a>
+        </div>
+    </nav>
+</header>
+
+<style>
+    .header {
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        font-weight: 700;
+        position: sticky;
+        top: 0;
+        left: 0;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+
+    .nav {
+        height: 3rem;
+    }
+
+    .nav-list {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        color: var(--red);
+    }
+
+    .nav-link:hover {
+        color: var(--hard-red);
+
+    }
+
+    @media screen and (min-width: 640px) {
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-list {
+            margin: 0;
+            gap: 1rem;
+        }
+    }
+</style>

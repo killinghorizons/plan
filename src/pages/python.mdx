@@ -1,0 +1,59 @@
+---
+layout: ../layouts/Base.astro
+title: Python
+---
+
+# {frontmatter.title}
+
+## Scripting
+
+- [os](https://docs.python.org/3/library/os.html) — Interact with the operating system: navigate folders, manage files, read environment variables.
+- [sys](https://docs.python.org/3/library/sys.html) - Access Python interpreter internals: arguments passed to a script, exit codes, stdin/stdout.
+- [subprocess](https://docs.python.org/3/library/subprocess.html) - Run system commands and shell programs from Python (like running ipconfig or ping).
+- [pathlib](https://docs.python.org/3/library/pathlib.html) - Modern way to handle file and folder paths, cleaner alternative to os.path.
+- [shutil](https://docs.python.org/3/library/shutil.html) - High-level file operations: copy, move, delete files and folders.
+- [psutil](https://pypi.org/project/psutil/) - Monitor system resources: CPU, RAM, disk, running processes and network stats.
+- [watchdog](https://pypi.org/project/watchdog/) - Watch the filesystem for changes (file created, modified, deleted) and trigger actions.
+- [logging](https://docs.python.org/3/library/logging.html) - Record events and errors in your scripts into log files instead of just printing.
+
+> Low priority
+
+- [fabric](https://www.fabfile.org/) — Automate remote SSH tasks over multiple machines at once, built on top of paramiko
+- [celery](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) — Schedule and distribute tasks across systems (overkill now but useful in large infra)
+
+## Network
+
+- [socket](https://docs.python.org/3/library/socket.html) - Low-level network communication: create clients/servers, scan ports, send raw data.
+- [requests](https://pypi.org/project/requests/) - Send HTTP requests easily: GET, POST, interact with REST APIs and web servers.
+- [scapy](https://scapy.net/) - Craft, send and analyze network packets (ARP scan, ping, sniffing).
+- [paramiko](https://www.paramiko.org/) - Connect to remote machines via SSH and execute commands programmatically.
+- [ftplib](https://docs.python.org/3/library/ftplib.html) - Connect to FTP servers, upload and download files.
+- [imaplib](https://docs.python.org/3/library/imaplib.html) - Read and manage emails from a mailbox via IMAP protocol.
+- [smtplib](https://docs.python.org/3/library/smtplib.html) - Send emails programmatically via SMTP protocol.
+
+> Low priority
+
+- [asyncio](https://docs.python.org/3/library/asyncio.html) — Handle multiple network connections simultaneously without blocking (asynchronous programming)
+
+- [twisted](https://twisted.org/) — Advanced event-driven network framework, used for complex server/client applications
+
+## Cyber
+
+- [hashlib](https://docs.python.org/3/library/hashlib.html) - Generate cryptographic hashes: MD5, SHA256 — useful for verifying file integrity.
+- [cryptography](https://pypi.org/project/cryptography/) - Encrypt and decrypt data, work with keys and certificates.
+- [secrets](https://docs.python.org/3/library/secrets.html) - Generate cryptographically secure random values for tokens and passwords.
+- [ssl](https://docs.python.org/3/library/ssl.html) - Handle SSL/TLS encrypted connections, inspect certificates
+
+> Low priority
+
+- [pwntools](https://docs.pwntools.com/en/stable/) — CTF and exploit development framework, useful if you get into ethical hacking
+- [impacket](https://github.com/fortra/impacket) — Low-level network protocol manipulation, widely used in pentesting (AD attacks etc.)
+
+## To Explore Later
+
+- [numpy](https://numpy.org/) - Work with multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+- [pandas](https://pandas.pydata.org/) - Manipulate and analyze tabular data (CSV, Excel) with powerful dataframes
+- [polars](https://pola.rs/) - Faster alternative to pandas for large datasets, written in Rust
+- [matplotlib](https://matplotlib.org/) - Data visualization.
+- [seaborn](https://seaborn.pydata.org/) - Higher level than matplotlib
+- [fastapi](https://fastapi.tiangolo.com/) - Modern API

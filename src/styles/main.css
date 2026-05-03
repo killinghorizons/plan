@@ -1,0 +1,72 @@
+:root {
+  --bg: #282828;
+  --fg: #ebdbb2;
+
+  --red: #cc241d;
+  --green: #98971a;
+  --yellow: #d79921;
+  --blue: #458588;
+  --purple: #b16286;
+  --acqua: #689d6a;
+  --gray: #a89984;
+  --orange: #d65d0e;
+
+  --hard-gray: #928374;
+  --hard-red: #fb4934;
+  --hard-green: #b8bb28;
+  --hard-yellow: #fabd2f;
+  --hard-blue: #83a598;
+  --hard-purple: #d3869b;
+  --hard-aqua: #8ec07c;
+  --hard-orange: #fe8019;
+
+  --bg0_h: #1d2021;
+  --bg0: #282828;
+  --bg0_s: #32302f;
+  --bg1: #3c3836;
+  --bg2: #504945;
+  --bg3: #665c54;
+  --bg4: #7c6f64;
+
+  --fg0: #fbf1c7;
+  --fg1: #ebdbb2;
+  --fg2: #d5c4a1;
+  --fg3: #bdae93;
+  --fg4: #a89984;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.618;
+  color: #ebdbb2;
+  background-color: #282828;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+}
+
+code,
+pre {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--hard-blue);
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  color: var(--red);
+}
